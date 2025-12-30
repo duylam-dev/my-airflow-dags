@@ -18,7 +18,7 @@ default_args = {
     "depends_on_past" : False
 }
 
-HDFS_URL = os.getenv("HDFS_URI" , "hdfs://hdfs-namenode:9000")
+HDFS_URL = os.getenv("HDFS_URI" , "hdfs://namenode:9000")
 
 def check_file_hdfs(path) :
     cilent = InsecureClient(HDFS_URL , user = "hdfs") 
